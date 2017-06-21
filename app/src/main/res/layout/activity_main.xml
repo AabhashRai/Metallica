@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metallica"
+    android:orientation="vertical"
+    tools:context="com.example.user.metallica.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="87dp"
+            android:layout_height="58dp"
+            android:background="@drawable/play"
+            android:onClick="play"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            android:layout_weight="0"
+            android:onClick="pause"
+            android:background="@drawable/pause"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="85dp"
+            android:layout_height="68dp"
+            android:layout_weight="0"
+            android:onClick="stop"
+            android:background="@drawable/stop"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</LinearLayout>
